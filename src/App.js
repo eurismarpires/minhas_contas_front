@@ -20,23 +20,23 @@ function App() {
           <Toolbar>
             <Typography variant="h6">Minhas Contas</Typography>
             <Box sx={{ display: "flex", flexGrow: 1 }}>
-              <Link href="#" >
+              <Link href="#">
                 <Button sx={{ my: 2, color: "white" }}>Movimentações</Button>
               </Link>
-              <Link href="#" >
+              <Link href="#">
                 <Button sx={{ my: 2, color: "white" }}>Categorias</Button>
-              </Link>              
-            </Box>          
+              </Link>
+            </Box>
           </Toolbar>
         </Container>
       </AppBar>
       <Box>
-                <Container maxWidth="lg" sx={{ mt: 1 }}>
-                    <Paper sx={{ p: 2 }}>
-                        <Outlet />
-                    </Paper>
-                </Container>
-            </Box>
+        <Container maxWidth="lg" sx={{ mt: 1 }}>
+          <Paper sx={{ p: 2 }}>
+            <Outlet />
+          </Paper>
+        </Container>
+      </Box>
     </>
   );
 }
